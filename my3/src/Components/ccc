@@ -1,0 +1,555 @@
+ import './App.css';
+import Navbar from './Components/Navbar';
+import Skills from './Components/Skills';
+import HSection from "./Components/HSection"
+import Footer from "./Components/Footer"
+import Education from "./Components/Education"
+import React from 'react';
+import Project from "./Components/Project"
+
+
+function App() {
+  const [theme, setTheme] = React.useState(true);
+
+  const Theme_change = () => {
+    setTheme(!theme);
+  };
+
+  return (
+    <>
+     <Navbar Theme_change={Theme_change} class={theme ? 'dark' : 'light'} />
+     <HSection class={theme ? 'dark' : 'light'} />
+     <Skills class={theme ? 'dark' : 'light'}></Skills>
+     <Education class={theme ? 'dark' : 'light'}></Education>
+     <Footer class={theme ? 'dark' : 'light'}></Footer>
+    
+      </>
+  );
+      
+      
+    
+}
+
+export default App;
+
+
+import React from 'react'
+import { Link } from 'react-router-dom';
+
+
+
+const Navbar = (props) => {
+  return (
+    <>
+      <div className={`${props.class}_navbar`}>
+            <h2 className={`${props.class}_nav_start`}>portfoli</h2>
+            <div className={`${props.class}_nav_main`}>
+            <h4 className={`${props.class}_nav_element`}>Skill</h4>
+            <h4 className={`${props.class}_nav_element`}>Home</h4>
+            <h4 className={`${props.class}_nav_element`}>Home</h4>
+            <h4 className={`${props.class}_nav_element`}>Home</h4>
+            <h4 className={`${props.class}_nav_element`}>Home</h4>
+
+            
+                
+            </div>
+            <div className="navend">
+                <button id = {`${props.class}_button_theme`}onClick={props.Theme_change}> Theme</button>
+            </div>
+      </div>
+    
+
+      
+    </>
+  )
+}
+
+export default Navbar;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+  }
+  
+  
+  .true_body{
+    background-color: #F0ECE5;
+    margin: 0px;
+  }
+  
+  .light_navbar {
+    display: flex;
+    margin-top: 0;
+    margin:0;
+    color: black;
+    justify-content: space-between;
+    background-color: #F0ECE5;
+  }
+  .light_nav_start{
+    margin: 1.7rem;
+    font-weight: 700;
+  
+  }
+  .dark_nav_start{
+    margin: 1.7rem;
+    font-weight: 700;
+    
+  }
+  
+  .light_nav_main {
+    background-color: #B6BBC4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    margin: 1.7rem;
+    height: 3rem;
+    border-radius: 13px;
+  }
+  
+  .light_nav_element {
+    margin: .7rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .light_nav_element:hover {
+    border-bottom: 2px solid wheat;
+    cursor: pointer;
+  }
+  
+  .light_nav_element:focus {
+    background-color: #989ca3;
+  }
+  
+  #light_button_theme {
+    background-color: #161A30;
+    color: aliceblue;
+    height: 2.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+  margin: 1.7rem;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .false_body {
+    background-color: #161A30;
+    color: #ffffff;
+    margin-top: 0px;
+    height: 100%;
+  }
+  
+  .dark_navbar {
+    display: flex;
+    margin: 0;
+    color: #ffffff;
+    justify-content: space-between;
+    background-color: #161A30;
+  }
+  
+  .dark_nav_main {
+    background-color: #2D3248;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    margin: 1.7rem;
+    height: auto;
+    border-radius: 13px;
+    
+  }
+  
+  .dark_nav_element {
+    margin: .7rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .dark_nav_element:hover {
+    border-bottom: 2px solid #989ca3;
+    cursor: pointer;
+  }
+  
+  .dark_nav_element:focus {
+    background-color: #161A30;
+  }
+  
+  #dark_button_theme {
+    background-color: #B6BBC4;
+    color: #161A30;
+    height: 2.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 1.7rem;
+    width: 4rem;
+  }
+  .light_extra{
+    background-color: #F0ECE5;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .light_Hero-section {
+    height: 35rem;
+    background-color: #F0ECE5;
+    color: #333333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .light_download_button{
+      background-color: #161A30;
+      color: aliceblue;
+      height: 4rem;
+      padding: 1rem;
+      border-radius: 5px;
+     margin: 1.7rem;
+     width: 8rem;
+     font-size: large;
+  
+  }
+  .dark_download_button{
+    background-color: #F0ECE5;;
+    color:#333333;;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 5px;
+   margin: 1.7rem;
+   width: 8rem;;
+   font-size: large;
+  
+  }
+  
+  
+  .light_text_area {
+    background-color: #F0ECE5;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    flex-shrink: 2;
+  }
+  
+  .light_image_area {
+    background-color: #F0ECE5;
+    flex-shrink: 0;
+    width: 30rem;
+    margin: 1rem;
+    margin-right: 0;
+    
+  }
+  .dark_Hero-section {
+    height: 35rem;
+    background-color: #161A30;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dark_text_area {
+    background-color: #161A30; 
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+  }
+  
+  .dark_image_area {
+    background-color: #161A30; 
+    margin-right: 0;
+    flex-shrink: 0;
+    width: 30rem;
+    margin: 1rem;
+  }
+  #image{
+    height: 25rem;
+    background-image: url("IMG_20230523_142807.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1rem;
+  }
+  #light_skills{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F0ECE5;;
+    color: #333333;
+    
+  }
+  
+  .light_skill_element{
+    margin: .5rem;
+    width: 32%;
+    border: 2px solid #161A30;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+   
+    height: 20rem;
+    border-radius: .4rem;
+  }
+  #dark_skills{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #161A30;
+    color: #ffffff;
+    
+  }
+  .dark_skill_element{
+    margin: .5rem;
+    width: 32%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ffffff;;
+    flex-wrap: wrap;
+  
+    height: 20rem;
+    border-radius: .4rem;
+  }
+  #light_skill_image{
+    height: 12rem;
+    width: 12rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    align-content: center;
+    padding: .2rem;
+   object-fit: contain;
+    
+  }
+  #light_heading{
+    text-align: center;
+    margin: 0rem;
+    padding: 2rem;
+    color: #333333;
+    background-color: #F0ECE5;
+  
+  
+  
+  }
+  #dark_heading{
+    text-align: center;
+    margin: 0rem;
+    padding: 2rem;
+    color: #ffffff;
+    background-color: #161A30;
+  
+  }
+  #dark_skill_image{
+    height: 12rem;
+    width: 12rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    align-content: center;
+    padding: .2rem;
+   object-fit: contain;
+  }
+  .light_education_heading{
+    color: #333333;
+    text-align: center;
+    margin-top: 0rem;
+    padding: 2rem;
+  
+  }
+  .dark_education_heading{
+    color: #ffffff;
+    text-align: center;
+    margin: 0rem;
+    padding: 2rem;
+    
+  
+  }
+  .light_education{
+    margin: 0px;
+    background-color: #F0ECE5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dark_education{
+    margin: 0;
+    background-color: #161A30;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .light_education_main{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    border: 2px solid black;
+    height: 18rem;
+    margin: 2.1rem;
+    border-radius: 15px;
+  
+    
+  }
+  .dark_education_main{
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffffff;
+    width: 95%;
+    height: 18rem;
+    margin: 2.1rem;
+    border-radius: 15px;
+    
+    
+    
+  }
+  .light_education_image_section{
+    width: 20rem;
+    border: 2px solid black;
+    height: 15rem;
+    margin: 1rem;
+    border-radius: 10px;
+    flex-shrink: 0 ;
+  
+    object-fit: cover;
+  
+  }
+  .dark_education_image_section{
+    width: 20%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+   
+    height: 15rem;
+    margin: 1rem;
+  
+  }
+  .light_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B6BBC4;
+    margin: 0;
+  }
+  .dark_footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2D3248;
+    align-items: center;
+    margin: 0;
+  }
+  .light_footer_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .dark_footer_list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  li{
+    list-style-type: none;
+  }
+  .light_footer_copywrite{
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #B6BBC4;
+  }
+  .dark_footer_copywrite{
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #2D3248;
+  }
+  .light_footer_form{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    width: auto;
+  }
+  .dark_footer_form{
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    width: auto;}
+  #Contact_form_heading{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  }
+  @media only screen and  (width < 600px){
+    html{
+      font-size: 10px;
+    }
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  import React from 'react';
+  import { Link } from 'react-router-dom';
+  
+  const Navbar = (props) => {
+    return (
+      <div className={`${props.class}_navbar`}>
+        <h2 className={`${props.class}_nav_start`}>portfolio</h2>
+        <div className={`${props.class}_nav_main`}>
+          <Link to="/" className={`${props.class}_nav_element`}>
+            Home
+          </Link>
+          <Link to="/Project" className={`${props.class}_nav_element`}>
+            Project
+          </Link>
+  
+          <Link to='/Experience' className={`${props.class}_nav_element`}>
+            Experience
+          </Link>
+          <Link to="/skills" className={`${props.class}_nav_element`}>
+            Skills
+          </Link>
+          <Link to="/Education" className={`${props.class}_nav_element`}>
+            Education
+          </Link>
+        </div>
+        <div className="navend">
+          <button id={`${props.class}_button_theme`} onClick={props.Theme_change}>
+            Theme
+          </button>
+        </div>
+      </div>
+    );
+  };
+  
+  export default Navbar;
+  
