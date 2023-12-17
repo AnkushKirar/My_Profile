@@ -12,6 +12,7 @@ const Skills = (props) => {
           <h3>{curElem.Tittle}</h3><br />
           <img src={curElem.Images} alt="logo" id = {`${props.class}_skill_image`} /><br />
           <div style={{textAlign: 'center'}}>{curElem.Description}</div>
+          
         </div>
        
         ))} 

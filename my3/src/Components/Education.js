@@ -14,8 +14,10 @@ const Education = (props) => {
         <img  src = {`${curElem.image}`} className={`${props.class}_education_image_section`}/>
         <div className={`${props.class}_education_content`}>
             <h1>{curElem.Tittle}</h1><br />
-            <h3>{curElem.Grade}</h3><br />
             <p>{curElem.description}</p>
+
+            <button className= {`${props.class}_cred_button`}><a href={`${curElem.link}`} className= {`${props.class}_cred_button`}  >Click & Chuckle! 🤣🔗</a></button><br />
+            
             
         </div>
         

@@ -56,7 +56,7 @@ const Navbar = (props) => {
 
       (  <>
         <button id={`${props.class}_button_theme`}  className='menu' onClick={()=>toggle()}>
-          {props.class=="dark"?
+          {props.class==="dark"?
           (<FontAwesomeIcon icon={faBars} />):(<FontAwesomeIcon icon={faBars} style={{color: "#d1d1d1",}} />)
           }</button>
 
@@ -83,7 +83,7 @@ const Navbar = (props) => {
       }
       <div className="navend">
         <button id={`${props.class}_button_theme`} onClick={props.Theme_change}>
-        {props.class=="dark"?
+        {props.class==="dark"?
           (<FontAwesomeIcon icon={faMoon} style={{color: "#1e3357",}} />):(<FontAwesomeIcon icon={faMoon} />)
           }
         

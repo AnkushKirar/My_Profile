@@ -9,9 +9,10 @@ const Experience = (props) => {
         <div className={`${props.class}_education_main`}>
         <img  src = "https://www.piits.jp/padmin/wp-content/uploads/2017/11/273px-IIT_Indore_logo.svg_.png" alt='logo' className={`${props.class}_education_image_section`}/>
         <div className={`${props.class}_education_content`}>
-            <h1>IIT Indore</h1><br />
-            <h3>Ml Intern</h3><br />
-            <p>I work as  ml intern in my college first year in iit indore i learned a fundamental of machine learning i also got further research offer from iit inodre</p>
+            <h2>IIT Indore</h2><br />
+            <h4>Ml Intern</h4><br />
+            <p>Survived IIT Indore's ML intern madness in my first year—rocked machine learning fundamentals and snagged a research offer. Because who needs sleep when you're busy being a genius? 😎🚀 #MLProdigy</p>
+            <button className= {`${props.class}_cred_button`}><a href= 'https://drive.google.com/file/d/1CMBaJDh7By2ZoMwrQtobEmCXtWTh6o9v/view?usp=drive_link' className= {`${props.class}_cred_button`}  >Click & Chuckle! 🤣🔗</a></button><br />
             
         </div>
         

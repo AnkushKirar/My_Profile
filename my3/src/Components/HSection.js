@@ -2,7 +2,12 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLinkedin, faGithub,  faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 library.add(faLinkedin, faGithub,  faTwitter);
+
+
+
+
 
 
 const HSection = (props) => {
@@ -13,11 +18,15 @@ const HSection = (props) => {
           <div style={{fontWeight:700}} className={`${props.class}_name2`} ><h1>Ankush Yadav </h1></div>
           <div style={{fontWeight:600}} className={`${props.class}_name3`}>Front-end Developer</div>
           <ul className={`${props.class}_footer_list` } id = 'list'>
-          <li style={{paddingRight: "2rem"}}><FontAwesomeIcon icon={faLinkedin} size="2xs" /></li><br /><br />
-          <li style={{paddingRight: "2rem"}} className={`${props.class}_footer_element`} ><FontAwesomeIcon icon={faGithub} size="2xs" /></li><br /><br />
-          <li style={{paddingRight: "2rem"}}><FontAwesomeIcon icon={faTwitter} size="2xs" /></li><br /><br />
+          <li><a href="https://www.linkedin.com/in/ankush-yadav-53b798215/" className={`${props.class}_footer_element1`} ><FontAwesomeIcon icon={faLinkedin} size="2xs" /></a></li><br /><br />          
+          <li><a href="https://github.com/AnkushKirar"  className={`${props.class}_footer_element2`} ><FontAwesomeIcon icon={faGithub} size="2xs" /></a></li><br /><br />          
+          <li><a href="https://www.coursera.org/user/dc216bffa011574062acf601573c3220" className={`${props.class}_footer_element3`}  ><FontAwesomeIcon icon={faTwitter} size="2xs" /></a></li><br /><br />          
+
         </ul>
-          <button className={`${props.class}_download_button`} >Download</button>
+      
+        
+          <a  href = 'https://drive.google.com/file/d/1fkGYPvu6WNoVb-POaQKDHkIMpmrTy2zF/view?usp=drive_link' className={`${props.class}_download_button`}>Download</a>
+          
           
           </section>
         <section className={`${props.class}_image_area`}>
@@ -28,4 +37,5 @@ const HSection = (props) => {
 }
 
 export default HSection;
+
 

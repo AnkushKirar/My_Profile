@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import Navbar from './Components/Navbar';
 import Skills from './Components/Skills';
 import HSection from './Components/HSection';
@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Experience from './Components/Experience';
 import Project from './Components/Project';
+
+
 
  function Hwraper({theme}){
   return(<>
@@ -23,13 +25,14 @@ import Project from './Components/Project';
 
 function App() {
   const [theme, setTheme] = useState(false);
+  
 
   const Theme_change = () => {
     setTheme(!theme);
   };
 
   return (
-    <>
+    <div>
       <Router>
         <Navbar Theme_change={Theme_change} class={theme ? 'dark' : 'light'} />
         <Routes>
@@ -45,7 +48,7 @@ function App() {
         </Routes>
         <Footer class={theme ? 'dark' : 'light'}></Footer>
       </Router>
-    </>
+    </div>
   );
 }
 

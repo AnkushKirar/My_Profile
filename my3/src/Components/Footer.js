@@ -9,9 +9,9 @@ const Footer = (props) => {
     <>
       <div className={`${props.class}_footer`}>
         <ul className={`${props.class}_footer_list`}>
-          <li><FontAwesomeIcon icon={faLinkedin} size="2xs" /></li><br /><br />
-          <li className={`${props.class}_footer_element`} ><FontAwesomeIcon icon={faGithub} size="2xs" /></li><br /><br />
-          <li><FontAwesomeIcon icon={faTwitter} size="2xs" /></li><br /><br />
+        <li><a href="https://www.linkedin.com/in/ankush-yadav-53b798215/" className={`${props.class}_footer_element1`} ><FontAwesomeIcon icon={faLinkedin} size="2xs" /></a></li><br /><br />          
+          <li><a href="https://github.com/AnkushKirar"  className={`${props.class}_footer_element2`} ><FontAwesomeIcon icon={faGithub} size="2xs" /></a></li><br /><br />          
+          <li><a href="https://www.coursera.org/user/dc216bffa011574062acf601573c3220" className={`${props.class}_footer_element3`}  ><FontAwesomeIcon icon={faTwitter} size="2xs" /></a></li><br /><br />          
         </ul>
         <div className={`${props.class}_footer_form`}>
           <h3 id="Contact_form_heading">Contact form</h3>
