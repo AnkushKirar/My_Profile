@@ -4,7 +4,7 @@ import Skills from './Components/Skills';
 import HSection from './Components/HSection';
 import Footer from './Components/Footer';
 import Education from './Components/Education';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
 import './App.css';
 import Experience from './Components/Experience';
 import Project from './Components/Project';
@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div>
+      
       <Router>
         <Navbar Theme_change={Theme_change} class={theme ? 'dark' : 'light'} />
         <Routes>
@@ -48,6 +49,7 @@ function App() {
         </Routes>
         <Footer class={theme ? 'dark' : 'light'}></Footer>
       </Router>
+      
     </div>
   );
 }
