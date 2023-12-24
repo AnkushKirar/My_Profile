@@ -56,7 +56,28 @@ const Skill_data = [
        Images: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
     
     
+    },
+    {id:9,
+        Tittle: "framer motion",
+        Description : "Framer Motion, the superhero of React Avengers, brings motion to life with more flair than a caped crusader in a dance-off",
+       Images: "https://tse1.mm.bing.net/th?id=OIP.InFyQEoyI-HEgCaFNTEkXQHaHA&pid=Api&rs=1&c=1&qlt=95&w=97&h=92"
+    
+    
+    
+    
+    
+    },
+    {id:10,
+        Tittle: "Figma",
+        Description : "Figma: Crafting pixels with the finesse of a digital maestro. 🎨✨",
+       Images: "https://logowik.com/content/uploads/images/figma.jpg"
+    
+    
+    
+    
+    
     }
+
 
 
 ]

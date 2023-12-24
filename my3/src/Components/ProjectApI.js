@@ -36,7 +36,7 @@ const Project_data = [
       f: "Features an interactive luck meter that adapts seamlessly to any screen size for a personalized experience.",
        t: "Crafted with a winning blend of JS, CSS, and HTML—because predicting luck should look good too! 🍀💫 #LuckMastermind",
 
-        link: "https://github.com/AnkushKirar/my-First-Game"
+        link: "https://astounding-muffin-5082e3.netlify.app/"
     
     
     },

@@ -4,10 +4,11 @@ import Skills from './Components/Skills';
 import HSection from './Components/HSection';
 import Footer from './Components/Footer';
 import Education from './Components/Education';
-import { HashRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import './App.css';
 import Experience from './Components/Experience';
 import Project from './Components/Project';
+import Contact from './Components/Contact';
 
 
 
@@ -45,6 +46,7 @@ function App() {
           <Route path='/Experience' element = {<Experience class={theme ? 'dark' : 'light'} ></Experience>}/>
           <Route path='/skills' element={<Skills class={theme ? 'dark' : 'light'} />} />
           <Route path='/Education' element={<Education class={theme ? 'dark' : 'light'} />} />
+          <Route path='/Contact' element={<Contact class={theme ? 'dark' : 'light'} />} />
           
         </Routes>
         <Footer class={theme ? 'dark' : 'light'}></Footer>

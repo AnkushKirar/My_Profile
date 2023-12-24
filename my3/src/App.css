@@ -563,7 +563,9 @@ li{
   flex-direction: column;
   justify-content: center;
   margin: 2rem;
-  width: auto;}
+  width: auto;
+
+}
 #Contact_form_heading{
 text-align: center;
 margin-top: 0px;
@@ -688,5 +690,15 @@ li{
   font-size: 5rem;
   font-style:italic 
 }
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-
+  background-color: #B6BBC4;
+}
+.inputfield{
+  height: 2rem;
+  border-radius: 4px;
+}

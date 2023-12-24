@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLinkedin, faGithub,  faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 library.add(faLinkedin, faGithub,  faTwitter);
 
@@ -25,7 +26,7 @@ const HSection = (props) => {
         </ul>
       
         
-          <a  href = 'https://drive.google.com/file/d/1fkGYPvu6WNoVb-POaQKDHkIMpmrTy2zF/view?usp=drive_link' className={`${props.class}_download_button`}>Download</a>
+          <div style={{display:'flex'}}><a  href = 'https://drive.google.com/drive/folders/1uCj_HYNNNhOic_PNLcw5ohu60KUnoWtx?usp=drive_link' className={`${props.class}_download_button`}>Resume!</a> <Link to='/Contact'className={`${props.class}_download_button`} >Hire Me!</Link></div>
           
           
           </section>

@@ -52,6 +52,9 @@ const Navbar = (props) => {
         <Link to="/Education" className={`${props.class}_nav_element`}>
           Education
         </Link>
+        
+        <Link to='/Contact' className={`${props.class}_nav_element`}>Contact
+        </Link>
       </div>):
 
       (  <>
@@ -78,6 +81,8 @@ const Navbar = (props) => {
       <Link to="/Education" className={`${props.class}_nav_element`}>
         Education
       </Link>
+      <Link to='/Contact' className={`${props.class}_nav_element`}>Contact
+        </Link>
     </div>):null}
     </>)
       }
