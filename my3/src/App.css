@@ -349,8 +349,7 @@ text-align: center;}
   border-radius: .4rem;
 }
 .dark_skill_element:hover{
-  transform: scale(1.1);
-  transition-duration: 500ms;
+
   z-index: 2;
   background-color: #080f35;
 }
@@ -379,6 +378,8 @@ text-align: center;}
   margin: 0rem;
   padding: 2rem;
   color: #9AD0C2;
+ 
+
   background-color: #161A30;
 
 }
@@ -434,8 +435,6 @@ text-align: center;}
   
 }
 .light_education_main:hover{
-  transform: scale(1.03);
-  transition-duration: 500ms;
   z-index: 2;
   background-color: #d8d5cf;}
 .dark_education_main{

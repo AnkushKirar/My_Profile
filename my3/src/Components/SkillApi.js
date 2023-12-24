@@ -52,14 +52,14 @@ const Skill_data = [
     },
     {id:8,
         Tittle: "gitHub",
-        Description : "Meet my coding manager, Jarvis—channeling inner Tony Stark vibes. Every superhero needs an AI sidekick! 💻⚡",
+        Description : "Meet my coding manager, Jarvis—channeling inner Tony Stark vibes.",
        Images: "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
     
     
     },
     {id:9,
         Tittle: "framer motion",
-        Description : "Framer Motion, the superhero of React Avengers, brings motion to life with more flair than a caped crusader in a dance-off",
+        Description : "Framer Motion, the superhero of React Avengers",
        Images: "https://tse1.mm.bing.net/th?id=OIP.InFyQEoyI-HEgCaFNTEkXQHaHA&pid=Api&rs=1&c=1&qlt=95&w=97&h=92"
     
     
